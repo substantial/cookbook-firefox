@@ -6,7 +6,9 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-package "ia32-libs"
+if node.kernel.machine == "x86_84"
+  package "ia32-libs"
+end
 
 user = node[:build_agent][:username]
 dir_path = "/home/#{user}/firefoxes"
