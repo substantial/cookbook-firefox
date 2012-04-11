@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-if node.kernel.machine == "x86_84"
+if node.kernel.machine != "x86"
   package "ia32-libs"
 end
 
