@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-if node.kernel.machine != "x86"
+if RUBY_PLATFORM.include? "x86_64"
   package "ia32-libs"
 end
 
